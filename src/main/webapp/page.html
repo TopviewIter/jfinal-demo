@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<table>
+	<#list pages.list?sort_by("id")?reverse as u>
+		<tr>
+			<td>${(u.name)!''}</td>
+			<td>${(u.id)!''}</td>
+			<td>${(u.password)!''}</td>
+		</tr>
+	</#list>
+	<tr>
+		<td>${(pages.pageNumber)!''}</td>
+		<td>${(pages.totalPage)!''}</td>
+		<td>${(pages.totalRow)!''}</td>
+	<tr>
+</table>
+</body>
+</html>

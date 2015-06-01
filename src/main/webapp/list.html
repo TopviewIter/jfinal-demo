@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<table>
+	<#list users as u>
+		<tr>
+			<td>${(u.name)!''}</td>
+			<td>${(u.id)!''}</td>
+			<td>${(u.password)!''}</td>
+		</tr>
+	</#list>
+	</table>
+</body>
+</html>
